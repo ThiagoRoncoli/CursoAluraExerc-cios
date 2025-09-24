@@ -5,15 +5,12 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Digite a quantidade de degraus: ");
-        int escada = scanner.nextInt();
+        int sum = 0;
+        int[] valores = {10, 20, 30, 40, 50};
 
-        for(int i = 1; i <= escada; i++){
-            System.out.println("Subindo o degrau: " + i);
-        }
-
-        System.out.println("Você chegou ao topo!");
-        scanner.close();
+        for(int i = 0; i < valores.length; i++){
+            sum += valores[i];
+            }
+        System.out.println("A soma total das receitas é: " + sum);
         }
     }
