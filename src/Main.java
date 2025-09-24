@@ -4,13 +4,18 @@ import java.util.Scanner;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
         int sum = 0;
-        int[] valores = {10, 20, 30, 40, 50};
+        int numero = 100;
 
-        for(int i = 0; i < valores.length; i++){
-            sum += valores[i];
+
+        for(int i = 0; i <= numero; i++){
+            if(i %2 == 0){
+                sum+=i;
             }
-        System.out.println("A soma total das receitas é: " + sum);
-        }
+        }System.out.println("A soma dos nuúmeros pares são: " + sum);
+
+
+
+
+    }
     }
